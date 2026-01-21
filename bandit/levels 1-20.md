@@ -65,5 +65,5 @@ Used ls -la
 ./bandit20-do cat /etc/bandit_pass/bandit20
 
 ## Level 20
-echo -n 'GbKksEFF4yrVs6il55v6gwY5aVje5f0j' | nc -l -p 1234 &
+Used echo -n 'GbKksEFF4yrVs6il55v6gwY5aVje5f0j' | nc -l -p 1234 &
 ./suconnect 1234
