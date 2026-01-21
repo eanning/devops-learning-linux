@@ -42,8 +42,28 @@ scp -P 2220 bandit13@bandit.labs.overthewire.org:sshkey.private .
 chmod 600 sshkey.private
 ssh -i sshkey.private bandit14@bandit.labs.overthewire.org -p 2220
 
-# Level 14 
+## Level 14 
+Used cat bandit14 | nc localhost 30000 = view file and send it to local server on that port
 
+## Level 15 
+used cat /etc/bandit_pass/bandit15 | openssl s_client -connect localhost:30001 -quiet
 
+## Level 16
+Used nmap -p 31000-32000 localhost
+opensll s_client -connect localhost 31790
 
+## Level 17 
+Used diff passwords.old passwords.new 
 
+## Level 18
+Used ssh bandit18@bandit.labs.overthewire.org -p 2220 ls
+ssh bandit18@bandit.labs.overthewire.org -p 2220 cat readme
+
+## Level 19
+Used ls -la
+./bandit20-do ls /etc/bandit_pass
+./bandit20-do cat /etc/bandit_pass/bandit20
+
+## Level 20
+echo -n 'GbKksEFF4yrVs6il55v6gwY5aVje5f0j' | nc -l -p 1234 &
+./suconnect 1234
